@@ -36,11 +36,10 @@ def introductory_page():
     return '<h1>------------English to Japanese Name Converter-----------'
 
 
-@app.route('/<username>/')
+@app.route('/<username>')
 def converter(username):
     output_name = list()
     [output_name.append(alphabet_map[i.upper()]) for i in username]
     return 'Original Name: {i}, Translated Name: {o}'.format(
             o=''.join(output_name),
             i=username)
-
