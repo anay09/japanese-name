@@ -33,7 +33,7 @@ alphabet_map = {
 
 @app.route('/')
 def introductory_page():
-    return '<h1>------------English to Japanese Name Converter-----------'
+    return '<h1><marquee>-------------English to Japanese Name Converter----------------'
 
 
 @app.route('/<username>')
